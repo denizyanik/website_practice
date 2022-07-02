@@ -6,9 +6,6 @@ body{
     opacity: 0.9;
     text-align: center;
     margin-top: 69px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 main{
@@ -66,9 +63,10 @@ header{
 }
 
 #featured_tea{
-    width: 1000px;
-    display: flex;
+    width: 100%;
+    max-width: 1000px;
     margin-top: 100px;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     height: auto;
@@ -87,6 +85,29 @@ header{
 .tea img{
     width: 300px;
     height: 200px;
+}
+
+
+#Locations{
+    background-image: url("../images/img-locations-background.jpg");
+    height: 560px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addresses{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: column wrap;
+    justify-content: space-evenly;
+}
+
+.address{
+    background-color: black;
+    width: 300px;
 }
 
 footer{
