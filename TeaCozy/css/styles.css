@@ -6,6 +6,15 @@ body{
     opacity: 0.9;
     text-align: center;
     margin-top: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 header{
@@ -22,7 +31,6 @@ header{
 }
 
 .logo{
-    flex-direction: row;
     height: 50px;
     margin-left: 10px;
 }
@@ -57,19 +65,36 @@ header{
     height: auto;
 }
 
-.featured_tea{
+#featured_tea{
     width: 1000px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
     height: auto;
 }
 
 .teas{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.tea{
+    margin: 1%;
 }
 
 .tea img{
     width: 300px;
-    
     height: 200px;
+}
+
+footer{
+    width: 100%;
+    margin-left: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
 }
